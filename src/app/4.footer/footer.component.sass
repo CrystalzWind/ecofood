@@ -1,0 +1,51 @@
+@import "../../assets/stylesheets/mixins"
+
+
+#footer-inner
+  background-color: $main-black
+  color: white
+  .container
+    padding-top: 40px
+    h1
+      +text(16px, white, normal)
+      padding: 20px 0 50px 0
+    ul
+      margin-top: -20px
+      padding: 0
+      li
+        padding-bottom: 10px
+        i
+          color: $main-green
+          font-size: 15px
+          padding-right: 10px
+
+          width: 30px
+
+    #payment-method
+      margin-top: -20px
+
+  #footer-bottom
+    border-top: 1px solid $main-gray
+    padding: 20px 0
+    position: relative
+    p
+      color: $light-gray
+    .social-links
+      position: absolute
+      right: 0
+      top: 38px
+      li
+        background-color: white
+        display: inline-block
+        margin: 0 5px
+        padding-top: 12px
+        padding-left: 9px
+        text-align: center
+        width: 40px
+        height: 40px
+        +rounded(100%)
+        &:hover
+          background-color: $main-green
+          i
+            color: white
+

@@ -1,0 +1,35 @@
+@import "../../../../assets/stylesheets/mixins"
+
+\:host
+  #header
+    height: 63px
+    border-bottom: 1px solid $main-gray
+    background-color: white
+    padding: 0
+  #title
+    background-color: $main-red
+    height: 100%
+    display: inline-block
+    text-transform: uppercase
+    letter-spacing: 0.5px
+    padding: 20px 25px
+    position: relative
+    margin-left: -10px
+    +font(1.6em, white, $montserrat, bold)
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      top: 5px
+      left: 0
+      background-color: darken($main-red, 5%)
+      width: 10px
+      height: 63px
+      +skew(45, 0)
+      z-index: -1
+
+\:host(.green)
+  #title
+    background-color: $main-green
+    &:after
+      background-color: darken($main-green, 5%)

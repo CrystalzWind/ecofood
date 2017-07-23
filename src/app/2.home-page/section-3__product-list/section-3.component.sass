@@ -1,0 +1,22 @@
+@import "../../../assets/stylesheets/mixins"
+
+\:host
+  padding: 50px 0
+  display: block
+  #section-header
+    +font(30px, $main-black, $montserrat, bold)
+    position: relative
+    text-align: center
+    padding: 20px 0
+    &:after
+      border-top: 1px solid $main-black
+      border-bottom: 1px solid $main-black
+      content: ''
+      position: absolute
+      top: 100%
+      left: 50%
+      height: 10px
+      width: 60px
+      margin-left: -25px
+  #product-grid
+    margin-top: 30px

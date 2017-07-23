@@ -1,0 +1,34 @@
+@import "../../../assets/stylesheets/mixins"
+
+\:host
+  background-color: #f8f8f8
+  padding: 150px 0 100px 0
+  display: block
+  margin: 0
+  #section-header
+    +font(30px, $main-black, $montserrat, bold)
+    margin-bottom: 50px
+    padding: 20px 0
+    position: relative
+    text-align: center
+    &:after
+      border-top: 1px solid $main-black
+      border-bottom: 1px solid $main-black
+      content: ''
+      position: absolute
+      top: 100%
+      left: 50%
+      height: 10px
+      width: 60px
+      margin-left: -25px
+  .content
+    text-align: center
+    .title
+      +text(18px, $main-black)
+    p
+      color: $main-gray
+      line-height: 23px
+
+  iframe
+    margin-top: 40px
+    width: 100%

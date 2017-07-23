@@ -1,0 +1,89 @@
+@import "../../../assets/stylesheets/mixins"
+
+\:host
+  background-color: $main-green
+  display: block
+  padding: 50px 0 100px 0
+  #section-header
+    padding: 20px 0
+    text-align: center
+    +font(81px, $dark-green, $pacifico)
+  .product-info
+    position: relative
+    .product-image
+      background-color: $dark-green
+      display: inline-block
+      margin: 0 10px
+      padding-top: 10px
+      text-align: center
+      width: 55px
+      height: 55px
+      +rounded(100%)
+      img
+        display: inline-block
+    .product-content
+      text-align: right
+      margin: 0 20px
+      .name
+        +text(20px, $dark-green, bold)
+      .detail
+        color: white
+        font-weight: bold
+        padding-top: 10px
+  #left
+    margin-top: 50px
+    .product-image
+      float: right
+    &:after
+      @extend .after
+      background-color: $dark-green
+      left: 100%
+      top: 20px
+      width: 150px
+      height: 2px
+  #right
+    margin-top: 100px
+    .product-content
+      text-align: left
+    .product-image
+      float: left
+    &:after
+      @extend .after
+      background-color: $dark-green
+      right: 100%
+      top: 20px
+      width: 150px
+      height: 2px
+  #deal-of-the-day-image
+    position: relative
+    height: 260px
+    margin-top: -20%
+    overflow: hidden
+    padding: 0
+    img
+      position: absolute
+      right: -28%
+      z-index: 300
+  #action
+    background: white url("../../../assets/images/section-4__deal-of-the-day/bg-deal-of-the-day.png") no-repeat
+    display: block
+    padding: 50px
+    position: absolute
+    text-align: center
+    z-index: 1000
+    width: 120%
+    margin-left: -15%
+    .price
+      +text(40px, $main-black)
+      padding-bottom: 20px
+    .add-to-cart-button
+      background-color: $main-green
+      border: 2px solid $main-green
+      color: white
+      display: inline-block
+      margin: 0 10px
+      padding: 10px 20px
+      +font(14px, white, $montserrat, normal)
+      +rounded(5px)
+
+

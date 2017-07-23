@@ -1,0 +1,29 @@
+@import "../../../assets/stylesheets/mixins"
+
+#slider
+  background: url("../../../assets/images/section-1__slider/1.jpg") no-repeat center center
+  @extend .background-cover
+  height: 800px
+  #slide
+    text-align: center
+    #heading
+      padding-top: 240px
+      +font(60px, white, $montserrat, bold)
+    #sub-heading
+      padding-top: 15px
+      padding-bottom: 100px
+      +font(24px, white, $montserrat)
+    .btn-group
+      button
+        margin: 0 10px
+        padding: 10px 20px
+        +font(14px, white, $montserrat, normal)
+        +rounded(5px)
+      .learn-more-btn
+        background-color: transparent
+        border: 2px solid white
+        color: white
+      .shop-now-btn
+        background-color: $main-green
+        border: 2px solid $main-green
+        color: white

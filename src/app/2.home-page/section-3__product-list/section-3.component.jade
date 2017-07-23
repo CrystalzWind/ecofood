@@ -1,0 +1,6 @@
+.container
+  .row: .col-md-12
+    #section-header OUR PRODUCTS
+  #product-grid.row
+    .col-md-3(*ngFor="let product of products")
+      product-panel([product]="product")

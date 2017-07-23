@@ -1,0 +1,35 @@
+@import "../../../assets/stylesheets/mixins"
+
+\:host
+  margin: 10px 0
+  display: block
+  .col-md-6
+    padding: 0 5px
+  .banner
+    height: 427px
+    text-align: center
+    .title
+      +font(40px, $main-black, $montserrat, bold)
+      padding-bottom: 20px
+    .sub-title
+      +font(26px, $main-gray, $montserrat)
+      padding-bottom: 20px
+    button
+      background-color: $main-green
+      border: 2px solid $main-green
+      color: white
+      margin: 0 10px
+      padding: 10px 20px
+      +font(14px, white, $montserrat, normal)
+      +rounded(5px)
+
+  #banner-1
+    background: url("../../../assets/images/section-2__banner/1.jpg") no-repeat center left
+    @extend .background-cover
+    padding-top: 130px
+    padding-left: 250px
+  #banner-2
+    background: url("../../../assets/images/section-2__banner/2.jpg") no-repeat 0
+    @extend .background-cover
+    padding-top: 130px
+    padding-right: 250px

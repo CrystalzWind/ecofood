@@ -1,0 +1,45 @@
+@import "../../assets/stylesheets/mixins"
+
+\:host
+  #header
+    padding: 20px 0
+    .search-bar
+      padding-top: 35px
+      input
+        border: none
+        color: $main-gray
+      button
+        background-color: white
+        border: none
+    .logo
+      text-align: center
+      img
+        display: inline-block
+    .shopping-cart
+      padding-top: 35px
+      text-align: right
+      .cart-total
+        display: inline-block
+        padding-right: 20px
+      .cart-icon
+        display: inline-block
+  #main-menu
+    border-top: 1px solid $main-gray
+    margin: 0
+    padding: 0
+    text-align: center
+    height: 74px
+    z-index: 200
+    li
+      display: inline-block
+      padding: 30.5px 15px
+      a
+        font-weight: 600
+        text-transform: uppercase
+        letter-spacing: 2px
+      &:hover, &:active
+        color: $main-green
+    .active
+      a
+        color: $main-green
+
